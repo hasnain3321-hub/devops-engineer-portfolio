@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: devops-engineer-portfolio:latest
+    container_name: devops-portfolio-site
+    ports:
+      - "127.0.0.1:8082:80"
+    restart: unless-stopped
